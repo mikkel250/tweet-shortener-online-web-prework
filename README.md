@@ -45,7 +45,7 @@ A client has hired you to automatically post some of their brand messages to twi
 2. Write a method, `bulk_tweet_shortener` that takes in an array of tweets, iterates over them, shortens them, and `puts` out the results to the screen. 
   * **Hint:** You already wrote a method that shortens tweets. Use it!
   * **Hint:** Remember that you can `puts` out the result of a method by putting `puts` in front of the method call. 
-
+  * ***Hint:** Pay attention to the capitalization and case of the words! What do you need to do to make sure that the words going into your dictionary are converted, regardless of case? 
 
 
   Now the client has come back to you. They love the program, but they noticed that even tweets that are under 140 characters are being shortened. Now they want you to only shorten the tweet if it's too long.
@@ -55,8 +55,9 @@ A client has hired you to automatically post some of their brand messages to twi
   Things are going great, but you're noticing that some tweets are too long still, even after substituting shorter words. Being the conscientious developer that you are, you talk to the client about this scenario and decide together that the best thing to do is just truncate the string to 140 characters if it's still too long after you do the substitution.
   
 4. Write another method, `shortened_tweet_truncator`, that truncates the tweet to 140 characters with an ellipsis (...) if it's still too long after substitution. E.g. "Random Passage satisfies the craving for those details that ..."
+Note that this test expects a return value, so don't use puts. 
   * **Hint:** Strings are indexed like arrays. That means you can return string index elements, or a set of string index elements, using the `[]` method. For example: 
-
+  
 ```ruby
 string = "Hi there, I am a string in this interesting and informative example"
 string[0]
